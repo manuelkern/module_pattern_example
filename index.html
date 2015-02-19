@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style type="text/css">
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        background: #B2B1FF;
+        position: relative;
+      }
+
+      #content {
+        background: #B876E8;
+      }
+
+      .modal {
+        display: none;
+      }
+
+      #modal-background {
+        background: rgba(0,0,0,.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="content">
+      <a href="#" class="modal-trigger">Click me for a modal</a>
+      <div class="modal">
+        <img src="http://i.imgur.com/PG1Xj4k.jpg">
+      </div>
+    </div>
+    <div id="modal-background"></div>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript">
+      App.Modal.initialize();
+    </script>
+  </body>
+</html>
